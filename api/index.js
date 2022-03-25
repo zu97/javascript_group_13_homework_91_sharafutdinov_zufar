@@ -29,10 +29,6 @@ app.ws('/', (ws, req) => {
                 case 'SEND_DRAW':
                     canvasDraws.push(drawData.data);
                     Object.keys(websocketConnections).forEach((connId) => {
-                       if (connId === id) {
-                           return;
-                       }
-
                        const conn = websocketConnections[connId];
                        conn.send(JSON.stringify({
                            type: 'NEW_DRAW',
