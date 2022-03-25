@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+canvas {
+  display: block;
+}
+
+.settings {
+  padding: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #e7e7e7;
+}
+
+.settings input {
+  margin: 5px;
+  height: 25px;
+}
